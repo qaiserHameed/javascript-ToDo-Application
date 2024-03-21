@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(135deg, #153677,#4e085f);
+    min-height: 100vh;
+}
+h2{
+    color: #153677;
+}
+.container{
+    margin: auto;
+    width: 20%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px 30px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.input-parent{
+    display: flex;
+}
+.in1{
+    flex: 1;
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(220, 215, 215);
+    padding-left: 10px;
+    /* color: white; */
+}
+button{
+    left: 200px;
+    position: relative;
+    width: 100px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+    background-color: tomato;
+    color: white;
+}
+ul{
+    /* border: 1px solid black; */
+    padding-left: 0;
+    margin-top: 20px;
+}
+ul li{
+    font-size: 17px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: none;
+    padding: 12px 8px 12px 30px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    /* margin-top: 30px; */
+    background-image: url(./Assets/cicle.png);
+    
+    background-size: cover;
+    /* background-position: center; */
+    top: 12px;
+    left: 4px;
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(./Assets/1.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+   
+}
+ul li span:hover{
+    background: #edeef0;
+}
